@@ -2,7 +2,10 @@ module com.example.addressapp1 {
     requires javafx.controls;
     requires javafx.fxml;
 
+    // FXML refleksioon
+    opens ch.makery.address to javafx.fxml;
+    opens ch.makery.address.view to javafx.fxml; // ⬅️ lisa see
 
-    opens com.example.addressapp1 to javafx.fxml;
-    exports com.example.addressapp1;
+    // Avalik API (nt MainApp)
+    exports ch.makery.address;
 }

@@ -1,4 +1,4 @@
-package com.example.addressapp1;
+package ch.makery.address;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
